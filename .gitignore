@@ -57,7 +57,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+.env*
 .env.development
 .env.production
 
@@ -78,3 +78,7 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# IDE Settings
+.eslintrc.json
+.prettierrc
