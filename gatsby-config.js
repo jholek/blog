@@ -64,6 +64,15 @@ module.exports = {
     /**
      *  Content Plugins
      */
+     {
+        resolve: `gatsby-source-ghost`,
+        options: {
+            apiUrl: process.env.PROD_GHOST_API_URL,
+            contentApiKey: process.env.PROD_GHOST_CONTENT_API_KEY,
+            version: `v3` // Ghost API version, optional, defaults to "v3".
+                          // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
+        }
+     }
     {
       resolve: `gatsby-source-filesystem`,
       options: {
